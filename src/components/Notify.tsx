@@ -11,7 +11,7 @@ const Notify: React.FC = () => {
     const navigate = useNavigate();
     const { userId: routeUserId } = useParams<{ userId: string }>();
     const baseURL = import.meta.env.VITE_SERVER_BASE_URL || 'http://localhost:5000';
-    const baseWSURL = import.meta.env.VITE_WS_BASE_URL || 'http://localhost:5000';
+    const baseWSURL = import.meta.env.VITE_WS_BASE_URL || 'ws://localhost:5000';
 
 
     const generateSocketUrl = (): string => {
